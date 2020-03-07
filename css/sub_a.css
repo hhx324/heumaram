@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* culture page */
+#cultureBg{position: relative;width: 100%;min-height: 100vh;height: 100%;background: url("../images/culture/culture_bg.jpg") no-repeat center top;}
+#cultureBg h2{position: absolute;width: 1090px;height: 256px;line-height: 270px;top: 540px;right: 0;font-family: calDream;font-size: 150px;letter-spacing: 30px;color: #ED9C63;font-weight: 400;background: rgba(47, 51, 45, 0.7);padding-left: 50px;}
+
+#content{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;min-width: 1400px;max-width: 1920px;margin: 0 auto;}
+#exhibition, #performance, #movie{width: 100%;min-height: 100vh;height: 100%;}
+
+/* 공통 클래스 */
+.visual{width: 50%;min-height: 100vh;height: 100%;top: 0;background: no-repeat fixed 0 0;background-size: contain;}
+
+.cnt{width: 50%;padding: 60px 50px;}
+.intro{height: 300px;padding: 460px 0 460px;}
+.intro h4{font-size: 50px;font-weight: normal;letter-spacing: 7px;color: #2f332d;}
+.intro p{line-height: 2;margin: 30px 0 80px;}
+.intro a{width: 160px;height: 60px;background: #fff;font-size: 20px;text-align: center;letter-spacing: 7px;font-weight: 500;padding: 20px 48px;-webkit-box-shadow: 5px 5px 10px;-moz-box-shadow: 5px 5px 10px;box-shadow: 5px 5px 10px;}
+.intro a:hover, .intro a:focus{background: #ED9C63;color: #fff;}
+
+.cnt1, .cnt2, .cnt3{margin-bottom: 400px;width: 100%;}
+.poster{width: 360px;height: auto;}
+.poster.f_l{margin-right: 30px;}
+.poster.f_r{margin-left: 30px;}
+.fade{top: 40px;}
+.txt{height: 450px;margin-top: 20px;}/* height: 471px */
+.txt h5{font-size: 35px; font-weight: 400;}
+.txt p{padding: 30px 0 30px;line-height: 1.6;}
+.txt strong:after{content: "";position: absolute;top: 22px;right: -35px;width: 55px;height: 2px;background: #555;transform: rotate(-45deg);}
+.txt span{margin-left: 60px;margin-bottom: 25px;font-weight: 400;line-height: 1.5;display: block;}
+.txt a{display: block;width: 150px;height: 37px;line-height: 37px;margin-top: 35px;text-align: center;letter-spacing: 7px;font-size: 20px;color: #ed9c63;font-weight: 400;}
+.txt a:hover{color: #fff;background: #ed9c63;;}
+.txt.f_r strong:after{left: -35px;transform: rotate(45deg);}
+.txt.f_r span{margin-right: 60px;}
+.txt.f_r a{margin-left: 250px;}
+
+/* cube transform */
+.cube_cover{width: 540px;height: 250px;margin-left: 233px;margin-top: 50px;}/* margin-left: 260px; => 233 */
+.cube_cover.f_r{margin: 50px 233px 0 0;}
+
+@media all and (max-width: 1680px) {
+  .cube_cover{margin-left: 113px;}
+  .cube_cover.f_r{margin-right: 112px;}
+}
+
+.img_box{width: 250px;height: 250px;perspective: 1000px;backface-visibility: hidden;}
+.img_box.mr_40{margin-right: 40px;}
+.img_box.ml_40{margin-left: 40px;}
+.cube1, .cube2{ width: 100%;height: 100%;position: absolute;transform-style: preserve-3d;transform: translateZ( -125px );transition: all 1s ease;}
+.img_box img{margin: 0;display: block;position: absolute;width: 250px;height: 250px;background: #fff;}
+.cube1 .front{transform: rotateY(  0deg ) translateZ( 125px );}
+.cube1 .next{transform: rotateY( 90deg ) translateZ( 125px )}
+.cube1:hover{transform: translateZ( -125px ) rotateY( -90deg );}
+.cube2 .front{transform: rotateX(  0deg ) translateZ( 125px );}
+.cube2 .down{transform: rotateX( -90deg ) translateZ( 125px )}
+.cube2:hover{transform: translateZ( -125px ) rotateX( 90deg );}
+
+#exhibition .visual{left: 0;background-image: url("../images/culture/exhibition_main.jpg");}
+#exhibition .cnt{margin-left: 50%;padding-right: 0;}
+
+#performance .visual{right: 0;background-image: url("../images/culture/performance_main.jpg");background-position-x: 100%;}
+#performance .cnt{margin-right: 50%;padding-left: 0;}
+
+#movie .visual{left: 0;background-image: url("../images/culture/movie_main.jpg");}
+#movie .cnt{margin-left: 50%;padding-right: 0;}
+
+/* 
+<a href="">| MORE |</a> 이런 장식은 가상요소로 제작하지.....
+
+<div class="cube_cover f_r p_r fade">
+해상도가 작아지면 오른쪽에서 260이나 띄우기 때문에 왼쪽 공간으로 넘어갑니다
+
+#cnt2 #photo img:nth-child(3){bottom: 0;left: 70px;} 단위 누락됨
+
+alt에 필요없는 문자 지우기
+날개.파티전 포스터 작품 => 날개.파티전 포스터
+*/
+
+/* exhibition */
+#exhibitBg{position: relative;width: 100%;height: 500px;background: url("../images/exhibition/exhibition_bg.jpg") no-repeat center top;}
+#exhibitBg h2{position: absolute;width: 100%;height: 250px;line-height: 250px;bottom: 0;left: 0;font-family: CaviarDreams;font-size: 100px;letter-spacing: 30px;text-align: center;color: #ED9C63;font-weight: 400;background: rgba(47, 51, 45, 0.6);}
+
+#exhibitTab{overflow: hidden;}
+#exhibitTab .tablist{position: relative;width: 1200px;height: 42px;margin: 140px auto;}
+#exhibitTab .tablist li{position:absolute;top:0;left:0;text-align: center;font-size: 32px;cursor: pointer;width: 400px;height: 41px;line-height: 41px;color: #666;transition:all 0.5s}
+#tab1{transform: translateX(0px);}
+#tab2{transform: translateX(400px);}
+#tab3{transform: translateX(800px);}
+#exhibitTab .tablist li.active{font-size: 45px;font-weight: 400;color: #2f332d;background: url("../images/exhibition/tabbg_prev_next.jpg") no-repeat center center;width: 400px;z-index: 2;}
+
+#exhibitTab .tabpanel{display: none;width: 100%;}
+#exhibitTab .tabpanel.active{display: block;}
+.tabpanel .exhibit{position: relative;height: 750px;margin: 0 0 300px 250px;outline: none;}
+.tabpanel .exhibit.even{margin: 0 250px 300px 0;}
+.tabpanel .exhibit .txt_box{position: absolute;top: 0;left: 500px;}
+.tabpanel .exhibit .txt_box h4{font-size: 36px;color: #ED9C63;font-weight: 400;margin-bottom: 30px;letter-spacing: 6px;}
+.tabpanel .exhibit .txt_box h4:before{content: "";display: inline-block;width: 8px;height: 35px;background: #ED9C63;margin-right: 20px;}
+.tabpanel .exhibit .txt_box p{font-size: 24px;line-height: 2;}
+.tabpanel .exhibit > img{position: absolute;top: 0;left: 0;}
+.tabpanel .exhibit .photo_box{position: absolute;top: 0;right: 0;height: 795px;}
+/* .tabpanel .exhibit .photo_box:after{content: "";position: absolute;top: 450px;right: 0;width: 324px;height: 350px;background: rgba(254, 196, 48, 0.5);} */
+.exhibit .photo_box img{position: absolute;top: 0;right: 0;}
+.exhibit .photo_box img + img{top: 450px;right: 300px;}
+
+.tabpanel .exhibit.even .txt_box{right: 500px;text-align: right;left: 0;}
+.tabpanel .exhibit.even .txt_box h4:before{display: none;}
+.tabpanel .exhibit.even .txt_box h4:after{content: "";display: inline-block;width: 8px;height: 35px;background: #ED9C63;margin-left: 20px;}
+.tabpanel .exhibit.even > img{right: 0;left: auto;}
+.tabpanel .exhibit.even .photo_box{left: 0;}
+.exhibit.even .photo_box img{left: 0;right: auto;}
+.exhibit.even .photo_box img + img{left: 300px;}

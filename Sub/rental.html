@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title> 헤움아라 - 대관안내 </title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/rental_program.css">
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/tab.js"></script>
+  <script src="../js/jquery.bxslider.min.js"></script>
+  <script src="../js/header.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#mainSlider .visual').bxSlider({
+        mode: 'fade', //'horizontal'(기본값), 'vertical', 'fade'
+        auto: true, //false(기본값), 자동실행을 원하면 추가
+        pause: 3000,  //4000(4초 기본값), 1초 = 1000
+        autoControls: true, //시작과 정지버튼 생성, 기본값 false
+        ariaLive: true, //스크린리더 사용자에게 변경된 정보를 알릴지 여부
+        ariaHidden: true, //보여지는 슬라이더 내용인지 여부
+        prevText: '이전 슬라이더 보기',
+        nextText: '다음 슬라이더 보기',
+        startText: '애니메이션 시작',
+        stopText: '애니메이션 정지'
+      });
+    })
+  </script>
+</head>
+
+<body>
+  <div id="skip">
+    <a href="#content">본문 바로가기</a>
+  </div>
+
+  <!-- 헤더 -->
+  <div class="headerwrap">
+      <div id="mainOpen">
+        <h1 class="blind">헤움아라</h1>
+        <button class="open_btn" type="button"><img src="../images/common/favicon_logo.png" alt="메뉴 열기"></button>
+      </div>
+      <header id="header">
+        <h1 class="logo f_l" aria-hidden="true">
+          <a href="../index.html">
+            <span class="blind">헤움아라</span>
+            <svg version="1.1" class="logosvg" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 175 50"
+              style="enable-background:new 0 0 175 50;" xml:space="preserve">
+              <polygon style="fill:#ED9C63;" points="18.029,18.096 3.791,18.096 3.791,1.225 1.878,1.225 1.878,35.266 3.791,35.266
+                      3.791,20.011 18.029,20.011 18.029,35.266 19.941,35.266 19.941,1.225 18.029,1.225 " />
+              <path style="fill:#ED9C63;" d="M48.417,29.821c-1.663,1.948-4.028,3.208-6.584,3.377c-2.81,0.186-5.206-0.628-7.19-2.442
+                      c0,0,13.601-13.617,13.601-13.617l1.45-1.452c-0.462-0.491-0.924-0.928-1.386-1.314c-2.255-1.809-4.923-2.632-8.003-2.469
+                      c-2.557,0.136-5.02,1.161-6.925,2.871c-2.856,2.563-4.177,5.756-3.963,9.579c0.144,2.568,1.172,5.041,2.893,6.952
+                      c2.53,2.809,5.671,4.124,9.425,3.943c2.577-0.124,5.069-1.137,6.999-2.849c0.714-0.634,1.33-1.31,1.848-2.028
+                      c0,0-1.915-0.686-1.915-0.686c-0.063-0.023-0.131-0.004-0.174,0.047L48.417,29.821z M31.504,22.275
+                      c0.176-1.661,0.831-3.256,1.881-4.555c2.044-2.529,4.602-3.794,7.676-3.794c2.196,0,4.123,0.638,5.78,1.915
+                      c-0.001,0.001-13.494,13.51-13.494,13.51C31.828,27.375,31.214,25.016,31.504,22.275z" />
+              <path style="fill:#ED9C63;"
+                d="M75.1,26.628c0,1.773-0.641,3.287-1.923,4.542c-1.282,1.255-2.802,1.883-4.558,1.883
+                      c-1.884,0-3.464-0.631-4.739-1.894c-1.289-1.248-1.934-2.759-1.934-4.532V13.735h-1.913v13.064c0.042,2.355,0.836,4.305,2.38,5.851
+                      c1.544,1.546,3.62,2.319,6.227,2.319c2.451,0,4.449-0.773,5.993-2.319c1.544-1.546,2.338-3.496,2.38-5.851V13.735H75.1V26.628z" />
+              <path style="fill:#ED9C63;" d="M100.024,14.352c-0.34,0.34-0.63,0.695-0.871,1.064c-0.241-0.383-0.524-0.738-0.85-1.064
+                      c-1.204-1.206-2.663-1.808-4.378-1.808c-1.658,0-3.081,0.574-4.271,1.723v-0.489h-1.913v20.893h1.913V18.373
+                      c0.099-1.05,0.517-1.936,1.254-2.66c0.836-0.837,1.842-1.255,3.018-1.255c1.176,0,2.189,0.418,3.039,1.255
+                      c0.779,0.78,1.197,1.723,1.254,2.83h-0.021v16.127h1.913V18.841c0-1.248,0.421-2.291,1.264-3.128
+                      c0.843-0.837,1.852-1.255,3.028-1.255c1.176,0,2.189,0.418,3.039,1.255c0.184,0.185,0.281,0.409,0.425,0.612l0.763-2.099
+                      c-1.176-1.112-2.58-1.683-4.227-1.683C102.687,12.543,101.228,13.146,100.024,14.352z" />
+              <g id="XMLID_46_">
+                <path style="fill:#ED9C63;" d="M99.357,47.629h2.04l4.739-13.042h11.773l4.739,13.042h2.019L112.022,12.8L99.357,47.629z
+                           M106.837,32.672l5.185-14.276l5.185,14.276H106.837z" />
+                <path style="fill:#ED9C63;" d="M135.182,30.544v-3.808h-1.913v20.893h1.913V36.842c0.071-2.525,1.013-4.688,2.826-6.489
+                          c1.289-1.291,2.536-1.964,3.74-2.021c0,0,0-2.085,0-2.085c-1.771,0.085-3.499,0.972-5.185,2.659
+                          C136.039,29.431,135.579,29.977,135.182,30.544z" />
+                <path style="fill:#ED9C63;"
+                  d="M170.965,29.693c-0.368-0.496-0.772-0.972-1.211-1.425c-2.394-2.397-5.312-3.536-8.752-3.417
+                          c-2.65,0.092-5.222,1.112-7.196,2.883c-2.848,2.555-4.17,5.746-3.965,9.574c0.141,2.624,1.221,5.14,3,7.074
+                          c2.358,2.563,5.24,3.844,8.646,3.844c3.23,0,5.986-1.142,8.267-3.425c0.439-0.454,0.843-0.929,1.211-1.426v4.255h1.913V26.736
+                          h-1.913V29.693z M170.959,38.468c-0.438,2.256-1.66,4.187-3.668,5.793c-1.292,1.033-2.873,1.677-4.518,1.852
+                          c-3.661,0.388-6.65-0.846-8.965-3.703c-1.056-1.303-1.72-2.903-1.898-4.571c-0.392-3.671,0.847-6.667,3.718-8.988
+                          c1.298-1.049,2.888-1.713,4.547-1.893c3.236-0.351,5.947,0.568,8.134,2.757c1.409,1.411,2.293,3.046,2.65,4.905
+                          c0.006,0.031,0.007,0.058,0.004,0.094c-0.088,1.009-0.05,2.665,0.001,3.676C170.966,38.419,170.965,38.442,170.959,38.468z" />
+              </g>
+            </svg>
+          </a>
+        </h1>
+        <div class="log f_r">
+          <ul>
+            <li><a href="">LOG</a></li>
+            <li><a href="" class="ENG">ENG</a></li>
+          </ul>
+        </div>
+        <nav id="gnb">
+          <ul>
+            <li class="gnb1"><a href="../Sub/intro.html">소개</a></li>
+            <li class="gnb2"><a href="../Sub/culture.html">문화</a></li>
+            <li class="gnb3"><a href="../Sub/program.html">프로그램</a></li>
+            <li class="gnb4"><a href="../Sub/event.html">이벤트</a></li>
+            <li class="gnb4"><a href="../Sub/rental.html">대관안내</a></li>
+            <li class="gnb4"><a href="../Sub/templete.html">고객센터</a></li>
+          </ul>
+        </nav>
+        <button class="close_btn ham_btn">메뉴 닫기</button>
+      </header>
+    </div>
+
+
+  <!-- 섹션 -->
+  <section id="content">
+    <div class="tit_bg rental_bg">
+      <h2 class="rental_txt">대관안내</h2>
+    </div>
+    <div id="rentalTab" class="area">
+      <!-- 탭버튼 -->
+      <ul class="tablist" role="tablist" aria-label="관이름">
+        <li class="tab first" role="tab" id="tab1" aria-controls="tabpanel1">헤움관</li>
+        <li class="tab" role="tab" id="tab2" aria-controls="tabpanel2">아라관</li>
+        <li class="tab" role="tab" id="tab3" aria-controls="tabpanel3">디자인전시관</li>
+        <li class="tab" role="tab" id="tab4" aria-controls="tabpanel4">갤러리관</li>
+        <li class="tab last" role="tab" id="tab5" aria-controls="tabpanel5">야외공간</li>
+      </ul>
+      <!-- 탭상세내용 -->
+      <div class="tabpanel" role="tabpanel" id="tabpanel1" aria-labelledby="tab1">
+        <div id="mainSlider" class="border_box">
+          <ul class="visual">
+            <li>
+              <img src="../images/rental/rentalspace1_1.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace1_2.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace1_3.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace1_4.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace1_5.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace1_6.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="hall_info info p_r">
+          <h2>헤움관</h2>
+          <ul>
+            <li><span>위치</span>1층</li>
+            <li><span>용도</span>전시, 공연, 강의, 교육, 행사, 토크 콘서트</li>
+            <li><span>면적</span>2,992㎡ / 분할사용불가</li>
+            <li><span>층고</span>9.6~16.2m</li>
+            <li><span>수용 인원</span>1,500명 (라운드 테이블 설치 시 1,200명)</li>
+            <li><span>부대 시설</span>운영지원사무실(16㎡, 46㎡, B1) 2실, 대기실(45㎡, B1) 1실 기본포함</li>
+            <li><span>대관 비용</span>21,392,800원(원/일 부가세포함, 설치, 철거, 행사 동일)</li>
+            <li><span>대관 기준시간</span>10:00~21:00</li>
+            <li><span>기타</span>전일 주차권 2장 제공</li>
+          </ul>
+          <strong>대관 대표 전화 0000-0000</strong>
+        </div>
+        <div class="tec_info info">
+          <h2>장비정보</h2>
+          <div>
+            <h3>전기설비</h3>
+              <dl class="brd_list1">
+                <dt>전기설비용량</dt>
+                <dd>870kW (3Ø4W 380/220V 30kW X 29EA)</dd>
+                <dt>벽부콘센트</dt>
+                <dd>사용불가</dd>
+                <dt>기본조명</dt>
+                <dd>LED 주광색 / 바닥면조도 : 300LUX (dimming 불가, 종합상황실을 통한 ON/OFF)</dd>
+              </dl>
+            <h3>통신설비</h3>
+              <dl class="brd_list1">
+                <dt>공용무선인터넷 (WiFi)</dt>
+                <dd>없음 (케이티, SK텔레콤 와이파이존 설치, 일시이용권 구매 후 이용)</dd>
+                <dt>광케이블 (OPTICAL)</dt>
+                <dd>64EA</dd>
+                <dt>유선전화 (VOICE)</dt>
+                <dd>192EA</dd>
+                <dt>인터넷 (DATA)</dt>
+                <dd>192EA</dd>
+              </dl>
+            <h3>기계설비</h3>
+              <dl class="brd_list1">
+                <dt>일반바턴</dt>
+                <dd>2EA / 15m / 100kg (현수막 전용)</dd>
+                <dt>서스펜션라이트바턴</dt>
+                <dd>2EA / 15m</dd>
+              </dl>
+            <h3>방재설비</h3>
+              <dl class="brd_list1">
+                <dt>소화전</dt>
+                <dd>4EA</dd>
+                <dt>소화기</dt>
+                <dd>3EA</dd>
+                <dt>광센서 화재감지기</dt>
+                <dd>5m~13m</dd>
+              </dl>
+            <h3>바닥하중</h3>
+              <dl class="brd_list1">
+                <dt>내부고정하중</dt>
+                <dd>m²/230kg</dd>
+                <dt>이동하중</dt>
+                <dd>m²/860kg</dd>
+                <dt>바닥재질</dt>
+                <dd>에폭시라이닝 마감 (지게차/작업차/리프트카/진입불가)</dd>
+              </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="tabpanel2" aria-labelledby="tab2">
+        <div id="mainSlider" class="border_box">
+          <ul class="visual">
+            <li>
+              <img src="../images/rental/rentalspace2_1.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace2_2.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace2_3.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace2_4.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace2_5.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace2_6.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="hall_info info p_r">
+          <h2>아라관</h2>
+          <ul>
+            <li><span>위치</span>1층</li>
+            <li><span>용도</span>전시, 공연, 강의, 교육, 행사, 토크 콘서트</li>
+            <li><span>면적</span>1,547㎡ / 분할사용불가</li>
+            <li><span>층고</span>10.1~13.8m</li>
+            <li><span>수용 인원</span>700명 수용 (라운드 테이블 설치 500명)</li>
+            <li><span>부대 시설</span>운영지원사무실(67㎡, B1) 1실, 대기실(50㎡, B1) 1실 기본포함</li>
+            <li><span>대관 비용</span>11,061,050원(원/일 부가세포함, 설치, 철거, 행사 동일)</li>
+            <li><span>대관 기준시간</span>10:00~21:00</li>
+            <li><span>기타</span>전일 주차권 2장 제공</li>
+          </ul>
+          <strong>대관 대표 전화 0000-0000</strong>
+        </div>
+        <div class="tec_info info">
+          <h2>장비정보</h2>
+          <div>
+          <h3>전기설비</h3>
+            <dl class="brd_list1">
+              <dt>전기설비용량</dt>
+              <dd>450kW (3Ø4W 380/220V 30kW X 15EA)</dd>
+              <dt>벽부콘센트</dt>
+              <dd>사용불가</dd>
+              <dt>기본조명</dt>
+              <dd>LED 주광색 / 바닥면조도 : 300LUX (dimming 불가, 종합상황실을 통한 ON/OFF)</dd>
+            </dl>
+          <h3>통신설비</h3>
+            <dl class="brd_list1">
+              <dt>공용무선인터넷 (WiFi)</dt>
+              <dd>없음 (케이티, SK텔레콤 와이파이존 설치, 일시이용권 구매 후 이용)</dd>
+              <dt>광케이블 (OPTICAL)</dt>
+              <dd>30EA</dd>
+              <dt>유선전화 (VOICE)</dt>
+              <dd>92EA</dd>
+              <dt>인터넷 (DATA)</dt>
+              <dd>92EA</dd>
+            </dl>
+          <h3>기계설비</h3>
+            <dl class="brd_list1">
+              <dt>일반바턴</dt>
+              <dd>2EA / 15m / 100kg (현수막 전용)</dd>
+              <dt>서스펜션라이트바턴</dt>
+              <dd>2EA / 15m</dd>
+            </dl>
+          <h3>방재설비</h3>
+            <dl class="brd_list1">
+              <dt>소화전</dt>
+              <dd>4EA</dd>
+              <dt>소화기</dt>
+              <dd>6EA</dd>
+              <dt>광센서 화재감지기</dt>
+              <dd>8m~9m</dd>
+            </dl>
+          <h3>바닥하중</h3>
+            <dl class="brd_list1">
+              <dt>내부고정하중</dt>
+              <dd>m²/230kg</dd>
+              <dt>이동하중</dt>
+              <dd>m²/860kg</dd>
+              <dt>바닥재질</dt>
+              <dd>에폭시라이닝 마감 (지게차/작업차/리프트카/진입불가)</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="tabpanel3" aria-labelledby="tab3">
+        <div id="mainSlider" class="border_box">
+          <ul class="visual">
+            <li>
+              <img src="../images/rental/rentalspace3_1.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace3_2.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace3_3.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace3_4.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace3_5.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace3_6.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="hall_info info p_r">
+          <h2>디자인전시관</h2>
+          <ul>
+            <li><span>위치</span>1층</li>
+            <li><span>용도</span>디자인·패션·아트 관련 전시 전용(단기행사불가)</li>
+            <li><span>면적</span>1,216㎡ / 분할사용불가</li>
+            <li><span>층고</span>8.8m</li>
+            <li><span>부대 시설</span>운영지원사무실 1실 제공</li>
+            <li><span>대관 비용</span>3,076,480원(원/일 부가세포함, 설치, 철거, 행사 동일)</li>
+            <li><span>대관 기준시간</span>10:00~21:00</li>
+          </ul>
+          <strong>대관 대표 전화 0000-0000</strong>
+        </div>
+        <div class="tec_info info">
+          <h2>장비정보</h2>
+          <div>
+          <h3>전기설비</h3>
+            <dl class="brd_list1">
+              <dt>전기설비용량</dt>
+              <dd>420kW (3Ø4W 380/220V 30KW X 14EA)</dd>
+              <dt>벽부콘센트</dt>
+              <dd>2P 20A 3회로 / 전시용 부적합</dd>
+              <dt>기본조명</dt>
+              <dd>CDM70W, 바닥면 조도:300~400LUX (dimming 불가, 종합상황실을 통한 ON/OFF)</dd>
+            </dl>
+          <h3>통신설비</h3>
+            <dl class="brd_list1">
+              <dt>공용무선인터넷 (WiFi)</dt>
+              <dd>없음</dd>
+              <dt>광케이블 (OPTICAL)</dt>
+              <dd>30EA</dd>
+              <dt>유선전화 (VOICE)</dt>
+              <dd>92EA</dd>
+              <dt>인터넷 (DATA)</dt>
+              <dd>92EA</dd>
+            </dl>
+          <h3>방재설비</h3>
+            <dl class="brd_list1">
+              <dt>소화기</dt>
+              <dd>8EA</dd>
+            </dl>
+          <h3>바닥하중</h3>
+            <dl class="brd_list1">
+              <dt>내부고정하중</dt>
+              <dd>m²/860kg</dd>
+              <dt>이동하중</dt>
+              <dd>m²/230kg</dd>
+              <dt>바닥재질</dt>
+              <dd>에폭시라이닝 마감 (지게차/작업차/리프트카/진입불가)</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="tabpanel4" aria-labelledby="tab4">
+        <div id="mainSlider" class="border_box">
+          <ul class="visual">
+            <li>
+              <img src="../images/rental/rentalspace4_1.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace4_2.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace4_3.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace4_4.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace4_5.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="hall_info info p_r">
+          <h2>갤러리관</h2>
+          <ul>
+            <li><span>용도</span>전시, 행사</li>
+            <li><span>면적</span>341㎡ / 분할사용불가</li>
+            <li><span>층고</span>3.4m</li>
+            <li><span>부대 시설</span>화장실</li>
+            <li><span>대관 비용</span>전시 :862,730원</li>
+            <li><span>대관 기준시간</span>10:00~21:00</li>
+          </ul>
+          <strong>대관 대표 전화 0000-0000</strong>
+        </div>
+        <div class="tec_info info">
+          <h2>장비정보</h2>
+          <div>
+          <h3>전기설비</h3>
+            <dl class="brd_list1">
+              <dt>전기설비용량</dt>
+              <dd>30kW (MAIN 3Ø4W 380/220V 30KW)</dd>
+              <dt>벽부콘센트</dt>
+              <dd>벽부콘센트 2P 2회로 , 바닥콘센트 1회로</dd>
+              <dt>기본조명</dt>
+              <dd>할로겐 50W, 개별 DIMMING가능</dd>
+            </dl>
+          <h3>통신설비</h3>
+            <dl class="brd_list1">
+              <dt>공용무선인터넷 (WiFi)</dt>
+              <dd>없음</dd>
+              <dt>광케이블 (OPTICAL)</dt>
+              <dd>없음</dd>
+              <dt>유선전화 (VOICE)</dt>
+              <dd>2EA</dd>
+              <dt>인터넷 (DATA)</dt>
+              <dd>2EA</dd>
+            </dl>
+          <h3>방재설비</h3>
+            <dl class="brd_list1">
+              <dt>소화기</dt>
+              <dd>3EA</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabpanel" role="tabpanel" id="tabpanel5" aria-labelledby="tab5">
+        <div id="mainSlider" class="border_box">
+          <ul class="visual">
+            <li>
+              <img src="../images/rental/rentalspace5_1.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace5_2.jpg" alt="">
+            </li>
+            <li>
+              <img src="../images/rental/rentalspace5_3.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="hall_info info p_r">
+          <h2>야외공간</h2>
+          <ul>
+            <li><span>용도</span>뷰티, 체험형 행사, 문화 행사 등 (식음 및 판매 위주의 행사 신청 제한)</li>
+            <li><span>면적</span>1100㎡ / 분할사용불가</li>
+            <li><span>부대 시설</span>없음</li>
+            <li><span>대관 비용</span>10,085,790원(원/일 부가세포함, 설치, 철거, 행사 동일)</li>
+            <li><span>대관 기준시간</span>10:00~21:00</li>
+          </ul>
+          <strong>대관 대표 전화 0000-0000</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <div class="section fp-auto-height">
+    <footer id="footer">
+      <div class="footer_logo p_a">
+        <a href="../index.html"><img src="../images/common/logo.png" alt="헤움아라 로고"></a>
+        <div class="f_r">
+          <address>헤움아라 예술관 | (06615) 서울 서초구 강남대로 405 통영빌딩</address>
+          <p>Copyrights &copy; 2019 HeumAra. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer_link p_a">
+        <p><a href="">개인정보처리방침</a></p>
+        <ul>
+          <li class="f_l"><a href="#">이용약관</a></li>
+          <li class="f_l"><a href="#">법적고지</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

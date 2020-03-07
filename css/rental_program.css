@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* tag reset */
+dl, dd{margin: 0;padding: 0;}
+
+/* 공통클래스 */
+.border_box{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.area{width: 1400px;margin: 0 auto;}
+
+
+#content{overflow: hidden;}
+
+/* 본문 타이틀 */
+.tit_bg{height: 500px;background: no-repeat center top;}
+.tit_bg.rental_bg{position: relative;background-image: url("../images/rental/top_bg.jpg");}
+.tit_bg h2{position: absolute;width: 100%;height: 250px;line-height: 250px;bottom: 0;left: 0;font-family: CaviarDreams;font-size: 100px;letter-spacing: 30px;text-align: center;color: #ED9C63;font-weight: 400;background: rgba(47, 51, 45, 0.6);}
+
+/* rentalTab */
+#rentalTab{position: relative;margin-top: 140px;background: #fff;}
+#rentalTab .tablist{height: 45px;padding: 20px;}
+#rentalTab .tablist li{float: left;width: 20%;height: 45px;line-height: 43px;border: 0px solid #000;background: #fff;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;text-align: center;}
+#rentalTab .tablist li:hover, #rentalTab .tablist li:focus, #rentalTab .tablist li.active{color: #ffb400;cursor: pointer;}
+#rentalTab .tablist li.active{border-left: 5px solid #ffb400;border-right: 5px solid #ffb400;}
+#rentalTab .tabpanel{display: none;color: #000;}
+#rentalTab .tabpanel.active{display: block;}
+
+.info{margin: 90px 0;padding-left: 75px;padding-right: 75px;}
+.info h2{font-size: 25px;display: inline-block;line-height: 39px;color: #ffb400;margin-bottom: 40px;}
+.info h2:after{content: "";display: block;height: 4px;background: #ffb400;}
+
+.hall_info:after{content: "";position: absolute;top: 0;bottom: 0;left: 50%;margin-left: 420px;width: 540px;background: #6f9778;}
+.hall_info ul li{line-height: 40px;font-size: 20px;}
+.hall_info ul li span{font-weight: 500;margin-right: 30px;}
+.hall_info strong{display: block;margin-top: 40px;}
+
+.tec_info{padding-top: 90px;padding-bottom: 90px;border-top: 1px solid #000;}
+.tec_info h2{color: #000;}
+.tec_info h2:after{background: #000;}
+.tec_info h3{position: relative;padding-left: 15px;margin-bottom: 20px;}
+.tec_info h3:after{content: "";position: absolute;left: 0;top: 50%;margin-top: -5px;width: 10px;height: 10px;background: #000;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;}
+.tec_info > div{padding: 0 15px;}
+.tec_info dl{border-top: 3px solid #707070;border-bottom: 3px solid #707070;margin-bottom: 70px;}
+.tec_info dl:after{content: "";display: block;clear: both;}
+
+.tec_info dl dt, .tec_info dl dd{float: left;height: 62px;line-height: 62px;border-bottom: 1px solid #707070;padding-left: 55px;}
+.tec_info dl dt{width: 315px;background: #ebebeb;}
+.tec_info dl dd{width: 795px;letter-spacing: -0.5px;}
+.tec_info dl dt:last-of-type, .tec_info dl dd:last-of-type{border-bottom: none;}
+
+
+#mainSlider{width: 1400px;height: 580px;background: #fff;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);margin-top: -20px;padding: 20px 20px 0;box}
+#mainSlider .visual li{width: 1360px;height: 525px;}
+
+/* 동적생성된 버튼 제어 .bx-controls */
+#mainSlider .bx-controls .bx-controls-direction a, #mainSlider .bx-controls .bx-controls-auto, #mainSlider .bx-controls .bx-pager{position: absolute;z-index: 100;}
+#mainSlider .bx-controls .bx-controls-direction a, #mainSlider .bx-controls .bx-pager a, #mainSlider .bx-controls .bx-controls-auto a{text-indent: -9999px;}
+
+/* 2) start 와 stop  .bx-controls-auto */
+#mainSlider .bx-controls .bx-controls-auto{top: 550px;left: 50%;margin-left: 61.5px;}
+#mainSlider .bx-controls .bx-controls-auto a{display: block;width: 27px;height: 27px;background: url("../images/rental/btn_pause_play.png") no-repeat;}
+#mainSlider .bx-controls .bx-controls-auto .bx-start{background-position: -27px 0;}
+#mainSlider .bx-controls .bx-controls-auto a.active{display: none;}
+
+/* 3) 인디케이터 .bx-pager */
+#mainSlider .bx-controls .bx-pager{top: 556px;left: 50%;margin-left: -88.5px;width: 150px;}
+#mainSlider .bx-controls .bx-pager a{float: left;width: 15px;height: 15px;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;border: 2px solid #fff;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-right: 10px;}
+#mainSlider .bx-controls .bx-pager a.active{background: #fff;}

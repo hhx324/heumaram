@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title> 헤움아라 </title>
+  <link rel="stylesheet" href="../css/fullpage.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/event.css">
+  <link rel="icon" href="../images/favicon.ico">
+  <!--[if lt IE 9]>
+      <script type="text/javascript" src="assets/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/fullpage.min.js"></script>
+  <script src="../js/event.min.js"></script>
+  <script src="../js/header.js"></script>
+</head>
+
+<body>
+  <!-- 스킵  -->
+  <div id="skip">
+    <a href="#fullpage">본문 바로가기</a>
+  </div>
+
+  <!-- 헤더 -->
+  <div class="headerwrap">
+    <div id="mainOpen">
+      <h1 class="blind">헤움아라</h1>
+      <button class="open_btn" type="button"><img src="../images/common/favicon_logo.png" alt="메뉴 열기"></button>
+    </div>
+    <header id="header">
+      <h1 class="logo f_l" aria-hidden="true">
+        <a href="../index.html">
+          <span class="blind">헤움아라</span>
+          <svg version="1.1" class="logosvg" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 175 50"
+            style="enable-background:new 0 0 175 50;" xml:space="preserve">
+            <polygon style="fill:#ED9C63;" points="18.029,18.096 3.791,18.096 3.791,1.225 1.878,1.225 1.878,35.266 3.791,35.266
+                      3.791,20.011 18.029,20.011 18.029,35.266 19.941,35.266 19.941,1.225 18.029,1.225 " />
+            <path style="fill:#ED9C63;" d="M48.417,29.821c-1.663,1.948-4.028,3.208-6.584,3.377c-2.81,0.186-5.206-0.628-7.19-2.442
+                      c0,0,13.601-13.617,13.601-13.617l1.45-1.452c-0.462-0.491-0.924-0.928-1.386-1.314c-2.255-1.809-4.923-2.632-8.003-2.469
+                      c-2.557,0.136-5.02,1.161-6.925,2.871c-2.856,2.563-4.177,5.756-3.963,9.579c0.144,2.568,1.172,5.041,2.893,6.952
+                      c2.53,2.809,5.671,4.124,9.425,3.943c2.577-0.124,5.069-1.137,6.999-2.849c0.714-0.634,1.33-1.31,1.848-2.028
+                      c0,0-1.915-0.686-1.915-0.686c-0.063-0.023-0.131-0.004-0.174,0.047L48.417,29.821z M31.504,22.275
+                      c0.176-1.661,0.831-3.256,1.881-4.555c2.044-2.529,4.602-3.794,7.676-3.794c2.196,0,4.123,0.638,5.78,1.915
+                      c-0.001,0.001-13.494,13.51-13.494,13.51C31.828,27.375,31.214,25.016,31.504,22.275z" />
+            <path style="fill:#ED9C63;"
+              d="M75.1,26.628c0,1.773-0.641,3.287-1.923,4.542c-1.282,1.255-2.802,1.883-4.558,1.883
+                      c-1.884,0-3.464-0.631-4.739-1.894c-1.289-1.248-1.934-2.759-1.934-4.532V13.735h-1.913v13.064c0.042,2.355,0.836,4.305,2.38,5.851
+                      c1.544,1.546,3.62,2.319,6.227,2.319c2.451,0,4.449-0.773,5.993-2.319c1.544-1.546,2.338-3.496,2.38-5.851V13.735H75.1V26.628z" />
+            <path style="fill:#ED9C63;" d="M100.024,14.352c-0.34,0.34-0.63,0.695-0.871,1.064c-0.241-0.383-0.524-0.738-0.85-1.064
+                      c-1.204-1.206-2.663-1.808-4.378-1.808c-1.658,0-3.081,0.574-4.271,1.723v-0.489h-1.913v20.893h1.913V18.373
+                      c0.099-1.05,0.517-1.936,1.254-2.66c0.836-0.837,1.842-1.255,3.018-1.255c1.176,0,2.189,0.418,3.039,1.255
+                      c0.779,0.78,1.197,1.723,1.254,2.83h-0.021v16.127h1.913V18.841c0-1.248,0.421-2.291,1.264-3.128
+                      c0.843-0.837,1.852-1.255,3.028-1.255c1.176,0,2.189,0.418,3.039,1.255c0.184,0.185,0.281,0.409,0.425,0.612l0.763-2.099
+                      c-1.176-1.112-2.58-1.683-4.227-1.683C102.687,12.543,101.228,13.146,100.024,14.352z" />
+            <g id="XMLID_46_">
+              <path style="fill:#ED9C63;" d="M99.357,47.629h2.04l4.739-13.042h11.773l4.739,13.042h2.019L112.022,12.8L99.357,47.629z
+                           M106.837,32.672l5.185-14.276l5.185,14.276H106.837z" />
+              <path style="fill:#ED9C63;" d="M135.182,30.544v-3.808h-1.913v20.893h1.913V36.842c0.071-2.525,1.013-4.688,2.826-6.489
+                          c1.289-1.291,2.536-1.964,3.74-2.021c0,0,0-2.085,0-2.085c-1.771,0.085-3.499,0.972-5.185,2.659
+                          C136.039,29.431,135.579,29.977,135.182,30.544z" />
+              <path style="fill:#ED9C63;"
+                d="M170.965,29.693c-0.368-0.496-0.772-0.972-1.211-1.425c-2.394-2.397-5.312-3.536-8.752-3.417
+                          c-2.65,0.092-5.222,1.112-7.196,2.883c-2.848,2.555-4.17,5.746-3.965,9.574c0.141,2.624,1.221,5.14,3,7.074
+                          c2.358,2.563,5.24,3.844,8.646,3.844c3.23,0,5.986-1.142,8.267-3.425c0.439-0.454,0.843-0.929,1.211-1.426v4.255h1.913V26.736
+                          h-1.913V29.693z M170.959,38.468c-0.438,2.256-1.66,4.187-3.668,5.793c-1.292,1.033-2.873,1.677-4.518,1.852
+                          c-3.661,0.388-6.65-0.846-8.965-3.703c-1.056-1.303-1.72-2.903-1.898-4.571c-0.392-3.671,0.847-6.667,3.718-8.988
+                          c1.298-1.049,2.888-1.713,4.547-1.893c3.236-0.351,5.947,0.568,8.134,2.757c1.409,1.411,2.293,3.046,2.65,4.905
+                          c0.006,0.031,0.007,0.058,0.004,0.094c-0.088,1.009-0.05,2.665,0.001,3.676C170.966,38.419,170.965,38.442,170.959,38.468z" />
+            </g>
+          </svg>
+        </a>
+      </h1>
+      <div class="log f_r">
+        <ul>
+          <li><a href="">LOG</a></li>
+          <li><a href="" class="ENG">ENG</a></li>
+        </ul>
+      </div>
+      <nav id="gnb">
+        <ul>
+          <li class="gnb1"><a href="../Sub/intro.html">소개</a></li>
+          <li class="gnb2"><a href="../Sub/culture.html">문화</a></li>
+          <li class="gnb3"><a href="../Sub/program.html">프로그램</a></li>
+          <li class="gnb4"><a href="../Sub/event.html">이벤트</a></li>
+          <li class="gnb4"><a href="../Sub/rental.html">대관안내</a></li>
+          <li class="gnb4"><a href="../Sub/templete.html">고객센터</a></li>
+        </ul>
+      </nav>
+      <button class="close_btn ham_btn">메뉴 닫기</button>
+    </header>
+  </div>
+
+
+  <!-- 본문 -->
+  <div id="fullpage">
+    <section class="section" id="cnt1">
+      <div class="simple-slider simple-slider_1">
+        <div class="slider-container">
+          <div class="slider-inner">
+            <div class="slider-slide"></div>
+            <div class="slider-slide"></div>
+            <div class="slider-slide"></div>
+            <div class="slider-slide"></div>
+          </div>
+        </div>
+        <a href="#" class="slider-previous"></a>
+        <a href="#" class="slider-next"></a>
+      </div>
+    </section>
+
+    <section class="section p_r" id="cnt2">
+      <div class="cnt2_list">
+        <ul id="modal1">
+          <li class="cnt2_li">
+            <div class="over color1">
+              <h4>TYPO<br>GALLERY</h4>
+              <p>한글 타이포 그라피는<br>보는 것 뿐만아니라 다양하게<br>누리는 장을 제공합니다.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img">
+            <a href="../images/event/2-1-1.jpg" role="button" class="gallery1"><img src="../images/event/2-1.jpg"
+                alt="무용"></a>
+          </li>
+          <li class="cnt2_li cnt2_li_1 669966">
+            <div class="over color2">
+              <h4>안상수<br>SPECIAL</h4>
+              <p>한글을 예술로 만드는<br>세계적인 디자이너<br>안상수의 특별전</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img cnt2_img_1">
+            <a href="../images/event/2-2-1.jpg" role="button" class="gallery1"><img src="../images/event/2-2.jpg"
+                alt="무용"></a>
+          </li>
+          <li class="cnt2_li cnt2_li_2">
+            <div class="over color2">
+              <h4>MUSICAL<br>영웅</h4>
+              <p>누가 죄인인가?<br>영웅 안중근의 삶을<br>뮤지컬로 느껴보세요.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img cnt2_img_2">
+            <a href="../images/event/2-3-1.jpg" role="button" class="gallery1"><img src="../images/event/2-3.jpg"
+                alt="무용"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cnt2_1_list">
+        <ul id="modal2">
+          <li class="cnt2_img cnt2_1_img">
+            <a href="../images/event/2-4-1.jpg" role="button" class="gallery1"><img src="../images/event/2-4.jpg"
+                alt="무용"></a>
+          </li>
+          <li class="cnt2_1_li">
+            <div class="over color3">
+              <h4>한국무용<br>K-DANCING</h4>
+              <p> 한국의 전통 문화를 바탕으로<br>한을 그린 정서의<br>전시를 기대하세요.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_1_img cnt2_1_img_1">
+            <a href="../images/event/2-5-1.jpg" role="button" class="gallery1"><img src="../images/event/2-5.jpg"
+                alt="무용"></a>
+          </li>
+          <li class="cnt2_1_li_1">
+            <div class="over color3">
+              <h4>JOURNEY<br>예술관견학</h4>
+              <p>헤움아라 예술관 투어는<br>총 3시간의 코스로<br>다른 풍경을 제시합니다.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_1_img cnt2_1_img_2">
+            <a href="../images/event/2-6-1.jpg" role="button" class="gallery1"><img src="../images/event/2-6.jpg"
+                alt="무용"></a>
+          </li>
+          <li class="cnt2_1_li_2 ff9966">
+            <div class="over color1">
+              <h4>김기라<br>SPECIAL</h4>
+              <p>소외된 자를 향한<br>소통의 예술의 김기라<br>전시에 초대합니다.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cnt2_2_list">
+        <ul id="modal3">
+          <li class="cnt2_li cnt2_2_li">
+            <div class="over color2">
+              <h4>PAINTING<br>수묵화</h4>
+              <p>여백의 미<br>다채로움과 단아함의<br>공간이 기다립니다.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img cnt2_2_img">
+            <a href="../images/event/2-7-1.jpg" role="button" class="gallery1"><img src="../images/event/2-7.jpg"
+                alt="무용"></a>
+          </li>
+          <li class="cnt2_li cnt2_2_li_1 ff9966">
+            <div class="over color1">
+              <h4>기억의 습작<br>DRAMA</h4>
+              <p>그리운 것은 그때일까?<br>아니면 그때의 나일까?<br>기억의 습작</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img cnt2_2_img_1">
+            <a href="../images/event/2-8-1.jpg" role="button" class="gallery1"><img src="../images/event/2-8.jpg"
+                alt="무용"></a>
+          </li>
+          <li class="cnt2_li cnt2_2_li_2">
+            <div class="over color3">
+              <h4>궁중제례악<br>ROYAL</h4>
+              <p>궁중 제례악은<br>한국의 당당한 기상과<br>강단을 느끼게 합니다.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img cnt2_2_img_2">
+            <a href="../images/event/2-9-1.jpg" role="button" class="gallery1"><img src="../images/event/2-9.jpg"
+                alt="무용"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="cnt3">
+      <div class="simple-slider simple-slider_2">
+        <div class="slider-container">
+          <div class="slider-inner">
+            <div class="slider-slide"></div>
+            <div class="slider-slide"></div>
+            <div class="slider-slide"></div>
+            <div class="slider-slide"></div>
+          </div>
+        </div>
+        <a href="#" class="slider-previous"></a>
+        <a href="#" class="slider-next"></a>
+      </div>
+    </section>
+
+    <section class="section" id="cnt4">
+      <div class="cnt2_list">
+        <ul id="modal1_1">
+          <li class="cnt2_li">
+            <div class="over color1">
+              <h4>TYPO<br>GALLERY</h4>
+              <p>각종 한글로고로<br>여러분만의 스타일을<br>창조하세요.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img">
+            <a href="../images/event/4-1-1.jpg" role="button" class="gallery2"><img src="../images/event/4-1.jpg"
+                alt="간판"></a>
+          </li>
+          <li class="cnt2_li cnt2_li_1 669966">
+            <div class="over color2">
+              <h4>PERFUME<br>CANDLE</h4>
+              <p>아로마테라피로<br>건강과 분위기를<br>모두 누리십시오.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img cnt2_img_1">
+            <a href="../images/event/4-2-1.jpg" role="button" class="gallery2"><img src="../images/event/4-2.jpg"
+                alt="캔들"></a>
+          </li>
+          <li class="cnt2_li cnt2_li_2">
+            <div class="over color2">
+              <h4>TYPO<br>BAG</h4>
+              <p>한글로 자수된<br>양질의 가방을 합리적인<br>가격에 만나보세요.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img cnt2_img_2">
+            <a href="../images/event/4-3-1.jpg" role="button" class="gallery2"><img src="../images/event/4-3.jpg" alt="가방"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cnt2_1_list">
+        <ul id="modal2_1">
+          <li class="cnt2_img cnt2_1_img">
+            <a href="../images/event/4-4-1.jpg" role="button" class="gallery2"><img src="../images/event/4-4.jpg" alt="한글블록"></a>
+          </li>
+          <li class="cnt2_1_li">
+            <div class="over color3">
+              <h4>BLOCK<br>KOREA</h4>
+              <p>한글을 배우고<br>창의력과 인지력을<br>우리아이에게 만들어요.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_1_img cnt2_1_img_1">
+            <a href="../images/event/4-5-1.jpg" role="button" class="gallery2"><img src="../images/event/4-5.jpg"
+                alt="병따개"></a>
+          </li>
+          <li class="cnt2_1_li_1">
+            <div class="over color3">
+              <h4>TYPO<br>OPENER</h4>
+              <p>디자인과 실용성을<br>겸비한 오프너로<br>지인에게 선물을 주세요.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_1_img cnt2_1_img_2">
+            <a href="../images/event/4-6-1.jpg" role="button" class="gallery2"><img src="../images/event/4-6.jpg"
+                alt="시원한 음료"></a>
+          </li>
+          <li class="cnt2_1_li_2 ff9966">
+            <div class="over color1">
+              <h4>MUG<br>BOTTLE</h4>
+              <p>바쁜 일상속 커피와<br>시의 여유를 여러분에게<br>선물할게요.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="cnt2_2_list">
+        <ul id="modal3_1">
+          <li class="cnt2_li cnt2_2_li">
+            <div class="over color2">
+              <h4>DOKDO<br>COSMETIC</h4>
+              <p>신제품 독도의 영혼을<br>담은 양질의 화장품을<br>만나보세요.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img cnt2_2_img">
+            <a href="../images/event/4-7-1.jpg" role="button" class="gallery2"><img src="../images/event/4-7.jpg"
+                alt="화장품"></a>
+          </li>
+          <li class="cnt2_li cnt2_2_li_1 ff9966">
+            <div class="over color1">
+              <h4>TOY<br>SPECIAL</h4>
+              <p>한글을 예술로 만드는<br>세계적인 장난감<br>우리 아이에게 선사합니다.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img cnt2_2_img_1">
+            <a href="../images/event/4-8-1.jpg" role="button" class="gallery2"><img src="../images/event/4-8.jpg"
+                alt="장난감"></a>
+          </li>
+          <li class="cnt2_li cnt2_2_li_2">
+            <div class="over color3">
+              <h4>TYPO<br>MOOD</h4>
+              <p>한글 타이포 그라피는<br>여러분의 밤에<br>환상을 제공합니다.</p>
+              <a href="">상세보기</a>
+            </div>
+          </li>
+          <li class="cnt2_img cnt2_2_img_2">
+            <a href="../images/event/4-9-1.jpg" role="button" class="gallery2"><img src="../images/event/4-9.jpg"
+                alt="무드등"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <div class="section fp-auto-height">
+      <footer id="footer">
+        <div class="footer_logo p_a">
+          <a href="../index.html"><img src="../images/common/logo.png" alt="헤움아라 로고"></a>
+          <div class="f_r">
+            <address>헤움아라 예술관 | (06615) 서울 서초구 강남대로 405 통영빌딩</address>
+            <p>Copyrights &copy; 2019 HeumAra. All rights reserved.</p>
+          </div>
+        </div>
+        <div class="footer_link p_a">
+          <p><a href="">개인정보처리방침</a></p>
+          <ul>
+            <li class="f_l"><a href="">이용약관</a></li>
+            <li class="f_l"><a href="">법적고지</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
